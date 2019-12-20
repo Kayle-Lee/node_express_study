@@ -25,9 +25,10 @@ app.get('/', function(req, res){
   res.render('home');
 });
 app.get('/about', function(req, res){
-  var randomFortune = 
+  /*var randomFortune = 
     fortunes[Math.floor(Math.random() * fortunes.length)];
-  res.render('about', {fortune: randomFortune});
+  */
+  res.render('about', {fortune: getFortune()});
 });
 
 app.use(function(req, res){
