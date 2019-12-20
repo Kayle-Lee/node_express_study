@@ -28,7 +28,7 @@ app.get('/about', function(req, res){
   /*var randomFortune = 
     fortunes[Math.floor(Math.random() * fortunes.length)];
   */
-  res.render('about', {fortune: getFortune()});
+  res.render('about', {fortune: fortune.getFortune()});
 });
 
 app.use(function(req, res){
