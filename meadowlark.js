@@ -2,13 +2,15 @@ var express = require('express');
 
 var app = express();
 
-var fortunes = [
+/*var fortunes = [
   "Conquer your fears or they will conquer you.",
   "Rivers need springs.",
   "Do not fear what you don't know.",
   "You will have a pleasant surprise.",
   "Whenever possible, keep it simple.",
 ];
+*/
+var fortune = require('./lib/fortune.js');
 
 var handlebars = require('express-handlebars')
   .create({ defaultLayout: 'main'});
